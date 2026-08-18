@@ -10,6 +10,7 @@
 @import url(../blocks/card.css);
 @import url(../blocks/card-container.css);
 @import url(../blocks/footer.css);
+
 :root {
   /* Paleta profesional Dark Slate */
   --bg-primary: #0c0e14;
@@ -44,11 +45,15 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-main);
@@ -85,4 +90,24 @@ ul {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #4a5568;
+}
+
+/* =========================
+   LAYOUT PRINCIPAL (para que el footer se acomode)
+========================= */
+.main {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: var(--profile-max-width);
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+/* =========================
+   RESPONSIVE GENERAL
+========================= */
+@media (max-width: 735px) {
+  .main {
+    padding: 20px 12px 40px;
+  }
 }
