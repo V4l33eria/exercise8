@@ -1,0 +1,28 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: var(--header-height);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(12, 14, 20, 0.85);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header__image {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.35s ease, filter 0.35s ease;
+  filter: drop-shadow(0 0 10px rgba(225, 48, 108, 0.3));
+}
+
+.header__image:hover {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 16px rgba(225, 48, 108, 0.55));
+}

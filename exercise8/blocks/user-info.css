@@ -1,0 +1,9 @@
+.user-info {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info__button {
+  margin: 0;
+}

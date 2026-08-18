@@ -1,0 +1,50 @@
+/* ===== FOOTER ELEGANTE ===== */
+.footer {
+  width: 100%;
+  padding: 48px 20px 40px;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  margin-top: 40px;
+}
+
+.footer__content {
+  max-width: var(--profile-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer__brand {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.03em;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.footer__links a {
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer__links a:hover {
+  color: var(--accent-pink);
+}
+
+.footer__copy {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
